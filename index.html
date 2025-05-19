@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/35658678b5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/final logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="row">
+            <div class="header-text">
+                <p>Aspiring full stack developer | AI/ML Learner</p>
+                <h1><span id="typewriter"></span><span class="cursor">|</span></h1>
+            </div>                     
+            <div class="video-container">
+                <video autoplay muted >
+                    <source src="images/hello_with_black_enhanced.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- -------about----------- -->
+<div id="about">
+    <div class="conatiner">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about_me_resized.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am Anjali Kushwaha, a second-year CSE student at VIT Bhopal
+                    University, specializing in AI and ML. Driven by a passion for
+                    technology and problem-solving, I strive to continuously
+                    enhance my skills and stay updated with the latest
+                    advancements in the field. My strong communication and
+                    presentation abilities enable me to collaborate effectively. With
+                    a commitment to continuous learning and growth, I am eager to
+                    explore AI and ML further and contribute to innovative projects.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Certifications')">Certifications</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Education">
+                        <ul>
+                            <li><span>2023-CURRENT</span><br>VIT Bhopal University<br>B-tech CSE AIML-8.69 CGPA</li>
+                            <li><span>2021-2022</span><br>Kendriya Vidyalaya OF Khamaria Jabalpur MP<br>Senior Secondary School Certificate-81.4%</li>
+                            <li><span>2019-2020</span><br>Kendriya Vidyalaya OF Khamaria Jabalpur MP<br>Secondary School Certificate-87.6%</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Skills">
+                        <ul>
+                            <li><span>C++</span><br>Experienced in solving problems and building applications using C++ with a focus on performance and algorithmic logic.</li>
+                            <li><span>Python</span><br>Proficient in writing scripts and developing applications using Python, essential for AI and ML tasks.</li>
+                            <li><span>HTML(hypertext markup language)</span><br>Skilled in structuring web content using semantic and accessible markup.</li>
+                            <li><span>CSS(Cascading style sheets)</span><br>Able to style and design responsive, visually appealing web pages.</li>
+                            <li><span>Java Script</span><br>Able to add interactivity and dynamic behavior to websites using client-side scripting.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Certifications">
+                        <ul>
+                            <li><span>Fundamental of AI and ML</span><br>by vityarthi (Issued on 26th April 2024)</li>
+                            <li><span>Python Essentials</span><br>by vityarthi (Issued on 16 December 2023)</li>
+                            <li><span>C++ Problem Solving</span><br>by CodeChef (Issued On 12th July 2023)</li>
+                            <li><span>Learn C++</span><br>by CodeChef (Issued on 10th July 2023)</li>
+                            <li><span>MATLAB Onramp</span><br>by MathWorks (Issued On 20th August 2023)</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------service------------->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Front-End Web Development</h2>
+                <p>Designing and building responsive, user-friendly websites<br>
+                    using HTML, CSS, JavaScript, and frameworks like<br>
+                    Streamlit.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>AI/ML Model Development </h2>
+                <p>Implementing machine learning solutions and data processing<br>
+                    using Python, Scikit-learn, and related tools.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database Design and Management</h2>
+                <p>Creating and managing databases using MySQL and MongoDB<br>
+                    for efficient data storage and retrieval.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <!-------contact-------->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>kushwahaanjali0117@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>97703.....</p>
+                <div class="social-icons">
+                    <a href=" https://github.com/anjali-k-ctrl"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.linkedin.com/in/anjali-kushwaha-6ab5b2280/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/a.njali_k/"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <a href="images/Anjali Kushwaha - Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <script>
+    const text = 'Hi, I am Anjali\nKushwaha From India.';
+    const typewriter = document.getElementById('typewriter');
+    let i = 0;
+
+    function type() {
+        if (i < text.length) {
+            if (text.substr(i, 6) === '<span') {
+                const end = text.indexOf('</span>', i) + 7;
+                typewriter.innerHTML += text.substring(i, end);
+                i = end;
+            } else if (text[i] === '\n') {
+                typewriter.innerHTML += '<br>';
+                i++;
+            } else {
+                typewriter.innerHTML += text[i];
+                i++;
+            }
+            setTimeout(type, 80);
+        }
+    }
+
+    type();
+</script>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemeny= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwWZg6C_RLjpgMOLeHdQABZlOgNUX_xMCbO3OdaubISpG5U0C73sWu28JU8QKEKKgtwAw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
